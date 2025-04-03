@@ -18,6 +18,7 @@
     width: 100%;
     position: absolute;
     margin-top: 10px;
+    padding-left: 10px;
   }
 
   .list-categorias > p {
