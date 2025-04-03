@@ -7,14 +7,17 @@
     width: 100%;
   }
   .nav-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
+    height: 132px;
   }
 
   .ul-menu-nav {
-    display: flex;
     width: 100%;
     position: absolute;
-    top: 0;
+    margin-top: 10px;
   }
 
   .list-categorias > p {
@@ -22,24 +25,14 @@
   }
   .list-categorias > .bi-list {
     font-size: 30px;
-    padding-left: 10px;
-    margin-bottom: 25px;
   }
 
   .ul-menu {
     display: none;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    padding: 20px;
-    top: 20px;
-    background-color: #e7e7ea;
   }
 
   .user-selection {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
     right: 0px;
   }
 
@@ -55,10 +48,17 @@
     height: 40px;
   }
 
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 231px;
+    margin-bottom: 10px;
+  }
+
   .topo-header {
     display: flex;
     text-align: center;
-    flex-wrap: wrap;
     width: 100%;
     height: 52px;
     line-height: 22px;
@@ -67,6 +67,9 @@
   .topo-header > p > span {
     font-style: normal;
     font-weight: 100;
+  }
+  .topo-header > p {
+    width: 300px;
   }
 
   .menu-buscar {
@@ -183,6 +186,16 @@
     margin-bottom: 30px;
     padding: 20px 10px;
     margin: 0;
+  }
+  .section-carousel-options > h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+  .section-carousel-options > a {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
   }
 
   .bi-arrow-left-circle,
@@ -368,7 +381,7 @@
   .info-banner-contato {
     width: 100%;
     height: 75px;
-    top: 3645px;
+    top: 3670px;
   }
 
   .info-banner-contato > p {
@@ -501,7 +514,7 @@
     justify-content: center;
     gap: 10px;
     list-style-type: none;
-    width: 100%;
+    width: 300px;
     height: 300px;
     margin-bottom: 20px;
     overflow: hidden;
@@ -514,27 +527,25 @@
   }
 
   .categorias-menu-left {
-    width: 100%;
+    width: 300px;
     margin-bottom: 20px;
   }
 
   .menu-left.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
-    margin-top: 95px;
+    width: 100vw;
+    height: 900px;
     color: #303030;
-    position: absolute;
     z-index: 1000;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     padding: 0;
     border-radius: 5px;
     box-shadow: 0px 8px 8px rgba(223, 221, 221, 0.5);
     background-color: #ffffff;
-    transform: translateX(55px);
     transition: transform 0.3s ease-in-out;
   }
 

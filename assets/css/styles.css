@@ -842,6 +842,11 @@ input[type="radio"]:checked + .cards-carousel .card-carousel {
 .menu-left {
   display: none;
 }
+
+.sub-menu.active {
+  display: block;
+}
+
 .sub-menu {
   list-style-type: none;
   padding-left: 10px;
@@ -871,10 +876,6 @@ input[type="radio"]:checked + .cards-carousel .card-carousel {
   border: 3px solid #fff;
 }
 
-.sub-menu.active {
-  display: block;
-}
-
 .menu-left.active {
   display: flex;
   flex-direction: row;
@@ -886,14 +887,13 @@ input[type="radio"]:checked + .cards-carousel .card-carousel {
   padding: 10px;
   position: absolute;
   z-index: 1000;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 50px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   background-color: #ffffff;
-  transform: translateX(55px);
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .categorias-menu-left {
