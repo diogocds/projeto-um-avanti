@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./components/menu_left.js" defer></script>
+    <script src="./components/footer_options.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <title>Projeto 01 - Desenvolvimento do Layout</title>
+  </head>
+  <body>
+    <div class="topo-header">
+      <p>
+        Ganhe <mark class="mark-topo-header">R$ 10,00</mark> de desconto no seu
+        pedido. Utilize o cupom
+        <span>DESCONTO10</span>
+      </p>
+    </div>
+    <nav class="nav-content">
+      <div class="menu-buscar">
+        <img
+          class="logo"
+          src="./assets/img/Grupo21089.png"
+          alt="Logo avanti"
+          title="Logo avanti"
+        />
+        <i class="bi bi-search" id="buscar-icon"></i>
+        <input
+          class="input-buscar"
+          type="text"
+          id="busca-input"
+          placeholder="Digite aqui o que você procura"
+        />
+        <div class="user-selection">
+          <i class="bi bi-person"></i>
+          <p>Olá,<br />Nome Cliente</p>
+          <i class="bi bi-cart"></i>
+          <div class="count-cart">2</div>
+        </div>
+      </div>
+
+      <div id="resultado-busca" style="display: none">
+        <span id="resultado-text"></span>
+        <span
+          id="excluir-resultado"
+          style="cursor: pointer; color: red; margin-left: 10px"
+          >X</span
+        >
+      </div>
+
+      <div class="ul-menu-nav">
+        <!-- menu-left -->
+        <menu-left></menu-left>
+        <!-- menu-left -->
+        <ul class="ul-menu">
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+          <li><a href="#">Departamento</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <section class="section-main">
+        <figure>
+          <img
+            class="rectangle-section"
+            src="./assets/img/Rectangle10.png"
+            alt="foto cadeira com toalhas"
+          />
+        </figure>
+        <figure class="rectangle-section-mobile">
+          <img
+            src="./assets/img/rectangle-mobie.png"
+            alt="foto cadeira com toalhas"
+          />
+        </figure>
+        <div class="frame-section">
+          <div class="frame-super-sale">
+            <span style="color: black">SUPER</span>
+            <h1>SALE</h1>
+          </div>
+          <p>ITENS SELECIONADOS COM ATÉ</p>
+          <h2>selected items up to</h2>
+          <div class="frame-promocao-off">
+            <h3>50% off</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-carousel" id="carousel1">
+        <div class="section-carousel-options">
+          <h3>Lançamento</h3>
+          <a href="#">Ver mais</a>
+        </div>
+        <div class="cards-carousel">
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+        </div>
+
+        <div class="radios-inputs">
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+        </div>
+
+        <i class="bi bi-arrow-left-circle" id="prevBtn1"></i>
+        <i class="bi bi-arrow-right-circle" id="nextBtn1"></i>
+      </section>
+
+      <section class="lorem-avanti">
+        <div class="lorem-avanti-img">
+          <figure>
+            <img src="./assets/img/Free_Mug_Mockup_2.png" alt="xicara avanti" />
+          </figure>
+        </div>
+        <div class="lorem-avanti-text">
+          <h2>LOREM IPSUM</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et
+            debitis ratione iste magni dicta quod eaque est tempora. Accusantium
+            distinctio maxime explicabo fugit vero possimus doloremque dolore
+            temporibus placeat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et
+            debitis ratione iste magni dicta quod eaque est tempora. Accusantium
+            distinctio maxime explicabo fugit vero possimus doloremque dolore
+            temporibus placeat.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-segundo-banner">
+        <div class="segundo-banner-container">
+          <div class="img-segundo-banner">
+            <figure>
+              <img src="./assets/img/segundo_banner.png" alt="xicara avanti" />
+            </figure>
+          </div>
+          <div class="segundo-banner-icon-text">
+            <div class="segundo-banner-icons">
+              <img
+                src="./assets/img/Circulo_Icone.png"
+                alt="icone-localização"
+              />
+              <img
+                src="./assets/img/Circulo_Icone.png"
+                alt="icone-localização"
+              />
+              <img
+                src="./assets/img/Circulo_Icone.png"
+                alt="icone-localização"
+              />
+            </div>
+            <div class="text-segundo-banner">
+              <h2>LOREM IPSUM</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto quidem maxime ipsum distinctio voluptate corrupti
+                asperiores mollitia eaque consectetur adipisci, quae ab quisquam
+                atque tempore libero autem ea eos sunt.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto quidem maxime ipsum distinctio voluptate corrupti
+                asperiores mollitia eaque consectetur adipisci, quae ab quisquam
+                atque tempore libero autem ea eos sunt.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto quidem maxime ipsum distinctio voluptate corrupti
+                asperiores mollitia eaque consectetur adipisci, quae ab quisquam
+                atque tempore libero autem ea eos sunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lorem-avanti">
+        <div class="lorem-avanti-img">
+          <figure>
+            <img src="./assets/img/Free_Mug_Mockup_2.png" alt="xicara avanti" />
+          </figure>
+        </div>
+        <div class="lorem-avanti-text">
+          <h2>LOREM IPSUM</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et
+            debitis ratione iste magni dicta quod eaque est tempora. Accusantium
+            distinctio maxime explicabo fugit vero possimus doloremque dolore
+            temporibus placeat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et
+            debitis ratione iste magni dicta quod eaque est tempora. Accusantium
+            distinctio maxime explicabo fugit vero possimus doloremque dolore
+            temporibus placeat.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-carouse-2" id="carousel2">
+        <div class="section-carousel-options">
+          <h3>Lançamento</h3>
+          <a href="#">Ver mais</a>
+        </div>
+        <div class="cards-carousel">
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+
+          <div class="card-carousel">
+            <mark class="mark-card-carousel-img">NOVO</mark>
+            <img
+              src="./assets/img/modelo-carousel.png"
+              alt="foto modelo camisa branca"
+              title="foto modelo camisa branca"
+            />
+            <h3>Lorem Ipsum Dolor Sit Amet Consectetuer Adipiscing Elit</h3>
+            <div class="card-preco">
+              <div class="precos-card">
+                <p><del>R$ 100,00</del></p>
+                <strong>R$ 79,90</strong>
+              </div>
+              <mark class="mark-card-carousel">10%OFF</mark>
+            </div>
+            <p>Ou em até 10x de R$ 7,90</p>
+            <button class="button-card">Comprar</button>
+          </div>
+        </div>
+        <div class="radios-inputs">
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+          <input type="radio" name="carousel" class="carousel-radio" />
+        </div>
+        <i
+          class="bi bi-arrow-left-circle bi-arrow-left-section-2"
+          id="prevBtn2"
+        ></i>
+        <i
+          class="bi bi-arrow-right-circle bi-arrow-right-section-2"
+          id="nextBtn2"
+        ></i>
+      </section>
+    </main>
+
+    <section class="banner-contato">
+      <figure>
+        <img
+          class="img-mobile-none"
+          src="/assets/img/image-banner.png"
+          alt="Banner Avanti"
+        />
+      </figure>
+      <figure class="img-desktop-none">
+        <img src="/assets/img/banner-mobile.png" alt="Banner Avanti" />
+      </figure>
+      <div class="info-banner-contato">
+        <p>
+          Entre em contato conosco e verifique a disponibilidade para sua região
+        </p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h4><span style="color: black">Cadastre-se na nossa</span> newsletter</h4>
+      <form action="#" class="newsletter-form">
+        <input
+          class="newsletter-input"
+          type="text"
+          placeholder="Digite seu nome"
+        />
+        <input
+          class="newsletter-input"
+          type="text"
+          placeholder="Digite seu e-mail"
+        />
+        <label class="newsletter-label">
+          <input type="checkbox" class="newsletter-checkbox" />
+          Estou de acordo com a
+          <a href="#">Politica de Privacidade.</a>
+        </label>
+        <button class="button-form">Cadastrar</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="links-uteis-footer">
+        <div class="links-uteis-content">
+          <div class="links-uteis-sociais">
+            <img src="./assets/img/Grupo21089.png" alt="logo avanti" />
+            <div class="links-sociais">
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-tiktok"></i>
+            </div>
+          </div>
+
+          <div class="links-uteis-institucional">
+            <h4><span>Institucional</span></h4>
+            <h5>Sobre Nós</h5>
+            <h5>Nossas Lojas</h5>
+            <h5>Privacidade e Segurança</h5>
+            <h5>Termos e Condições</h5>
+          </div>
+
+          <div class="links-uteis-central-ajuda">
+            <h4><span>Central de Ajuda</span></h4>
+            <h5>Fale Conosco</h5>
+            <h5>Frete e Entrega</h5>
+            <h5>Trocas e Devoluções</h5>
+            <h5>Formas de Pagamentos</h5>
+            <h5>FAQ</h5>
+          </div>
+
+          <div class="links-uteis-atendimento">
+            <h4><span>Atendimento</span></h4>
+            <h5><span style="color: black">Telefone</span> (00) 1234-5678</h5>
+            <h5>
+              <span style="color: black">E-mail </span>exemplo@exemplo.com.br
+            </h5>
+            <h5>Nossas Lojas</h5>
+            <h5>Privacidade e Segurança</h5>
+            <h5>Termos e Condições</h5>
+          </div>
+        </div>
+        <!-- footer-options -->
+        <footer-options></footer-options>
+        <!-- footer-options -->
+        <div class="tipos-pagamentos">
+          <img src="./assets/img/amex.png" alt="bandeira amex" />
+          <img src="./assets/img/mastercard.png" alt="bandeira mastercard" />
+          <img src="./assets/img/visa.png" alt="bandeira visa" />
+          <img src="./assets/img/hiper.png" alt="bandeira hipercard" />
+          <img src="./assets/img/elo.png" alt="bandeira elocard" />
+          <img src="./assets/img/maestro.png" alt="bandeira maestrocard" />
+          <img src="./assets/img/paypal.png" alt="bandeira paypal" />
+          <img src="./assets/img/pix.png" alt="pixpay" />
+          <img src="./assets/img/boleto.png" alt="boleto" />
+        </div>
+      </div>
+      <div class="grupo-avanti">
+        <div class="grupo-avanti-text">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. A corrupti
+            ad, consequuntur ratione nam quia culpa minus, ipsam repudiandae
+            laborum nemo aut, numquam error dolores aspernatur quidem unde? A,
+            commodi!
+          </p>
+        </div>
+        <div class="grupo-avanti-parceiros">
+          <img src="./assets/img/letsEncrypt.png" alt="grupo lets" />
+          <img src="./assets/img/vtex-pci-200.png" alt="grupo vetex" />
+          <img src="./assets/img/Grupoavanti.png" alt="grupo avanti" />
+          <img src="./assets/img/vtex.png" alt="vetex" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
