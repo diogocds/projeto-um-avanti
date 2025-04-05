@@ -216,6 +216,10 @@
     margin: 0;
   }
 
+  .cards-carousel::-webkit-scrollbar {
+    color: white;
+  }
+
   .cards-carousel {
     display: flex;
     width: 100%;
