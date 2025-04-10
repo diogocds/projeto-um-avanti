@@ -1,36 +1,3 @@
-// Função para inicializar o carrossel
-function initializeCarousel(carouselId, prevBtnId, nextBtnId) {
-  const prevBtn = document.getElementById(prevBtnId);
-  const nextBtn = document.getElementById(nextBtnId);
-
-  const carousel = document.querySelector(`#${carouselId} .cards-carousel`);
-  const totalCards = document.querySelectorAll(
-    `#${carouselId} .card-carousel`
-  ).length;
-
-  let currentIndex = 0;
-
-  function updateCarousel() {
-    const offset = -(currentIndex * (carousel.clientWidth / totalCards));
-    carousel.style.transform = `translateX(${offset}px)`;
-  }
-
-  prevBtn.addEventListener("click", () => {
-    currentIndex = currentIndex === 0 ? totalCards - 1 : currentIndex - 1;
-    updateCarousel();
-  });
-
-  nextBtn.addEventListener("click", () => {
-    currentIndex = currentIndex === totalCards - 1 ? 0 : currentIndex + 1;
-    updateCarousel();
-  });
-
-  updateCarousel();
-}
-
-initializeCarousel("carousel1", "prevBtn1", "nextBtn1");
-initializeCarousel("carousel2", "prevBtn2", "nextBtn2");
-
 // Função para simular busca
 
 document.getElementById("buscar-icon").addEventListener("click", function () {
@@ -57,60 +24,28 @@ function resultadoBusca() {
   }
 }
 
-// função de navegação do carousel
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Carrossel 1
-  const radios1 = document.querySelectorAll("#carousel1 .carousel-radio");
-  const cards1 = document.querySelectorAll("#carousel1 .card-carousel");
-  const prevBtn1 = document.getElementById("prevBtn1");
-  const nextBtn1 = document.getElementById("nextBtn1");
-
-  // Carrossel 2
-  const radios2 = document.querySelectorAll("#carousel2 .carousel-radio");
-  const cards2 = document.querySelectorAll("#carousel2 .card-carousel");
-  const prevBtn2 = document.getElementById("prevBtn2");
-  const nextBtn2 = document.getElementById("nextBtn2");
-
-  // Função para atualizar o carrossel com base no rádio selecionado
-  function updateCarousel(carouselIndex, radios, cards) {
-    radios.forEach((radio, index) => {
-      radio.addEventListener("change", function () {
-        cards.forEach((card, cardIndex) => {
-          if (index === cardIndex) {
-            card.classList.add("active");
-          } else {
-            card.classList.remove("active");
-          }
-        });
-      });
-    });
-  }
-
-  // Função para navegar para o próximo slide
-  function nextSlide(carouselIndex, radios, cards, direction = 1) {
-    let checkedRadioIndex = Array.from(radios).findIndex(
-      (radio) => radio.checked
-    );
-    if (checkedRadioIndex === -1) checkedRadioIndex = 0;
-
-    let nextIndex = checkedRadioIndex + direction;
-    if (nextIndex < 0) nextIndex = radios.length - 1;
-    if (nextIndex >= radios.length) nextIndex = 0;
-
-    radios[nextIndex].checked = true;
-    radios[nextIndex].dispatchEvent(new Event("change"));
-  }
-
-  // Atualiza carrosséis com base nos rádios
-  updateCarousel(1, radios1, cards1);
-  updateCarousel(2, radios2, cards2);
-
-  // Navegação através das setas para o Carrossel 1
-  nextBtn1.addEventListener("click", () => nextSlide(1, radios1, cards1, 1));
-  prevBtn1.addEventListener("click", () => nextSlide(1, radios1, cards1, -1));
-
-  // Navegação através das setas para o Carrossel 2
-  nextBtn2.addEventListener("click", () => nextSlide(2, radios2, cards2, 1));
-  prevBtn2.addEventListener("click", () => nextSlide(2, radios2, cards2, -1));
+$(document).ready(function () {
+  $(".cards-carousel").slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: false,
+    prevArrow: '<i class="bi bi-arrow-left-circle slick-prev"></i>',
+    nextArrow: '<i class="bi bi-arrow-right-circle slick-next"></i>',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });

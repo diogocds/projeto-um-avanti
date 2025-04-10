@@ -172,10 +172,6 @@
   }
 
   #carousel2 {
-    margin: 0;
-  }
-
-  .section-carouse-2 {
     display: none;
   }
 
@@ -199,16 +195,6 @@
     line-height: 20px;
   }
 
-  .bi-arrow-left-circle,
-  .bi-arrow-right-circle {
-    display: none;
-  }
-
-  .bi-arrow-left-section-2,
-  .bi-arrow-right-section-2 {
-    display: none;
-  }
-
   .section-carousel {
     width: 100%;
     height: 526px;
@@ -224,8 +210,8 @@
     display: flex;
     width: 100%;
     height: 426px;
-    margin-left: 0px;
-    overflow: auto;
+    padding-left: 0px;
+    overflow-y: hidden;
   }
 
   .card-carousel {
@@ -249,7 +235,17 @@
     font-weight: 400;
   }
 
+  .slick-prev,
+  .slick-next {
+    left: -50px;
+    right: 0px;
+  }
+
   .button-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     width: 158px;
     height: 40px;
     border-radius: 8px;
@@ -386,7 +382,7 @@
   .info-banner-contato {
     width: 100%;
     height: 75px;
-    top: 3670px;
+    top: 3665px;
   }
 
   .info-banner-contato > p {
@@ -519,11 +515,11 @@
     justify-content: center;
     gap: 10px;
     list-style-type: none;
-    width: 300px;
+    width: 90%;
     height: 300px;
-    margin-bottom: 20px;
+    left: 0;
+    position: relative;
     overflow: hidden;
-    padding: 0;
     background-color: #f5f5f5;
   }
 
@@ -531,18 +527,47 @@
     font-size: 14px;
   }
 
-  .categorias-menu-left {
-    width: 300px;
-    margin-bottom: 20px;
+  .div-categorias {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 280px;
+  }
+  .categorias-menu-left-1 {
+    display: flex;
+    width: 63px;
+    height: 236px;
+    left: 30px;
+    top: 0px;
+    position: relative;
+    gap: 12px;
+  }
+  .categorias-menu-left-2 {
+    display: flex;
+    width: 63px;
+    height: 236px;
+    left: 90px;
+    top: 0px;
+    position: relative;
+    gap: 12px;
+  }
+  .categorias-menu-left-3 {
+    display: flex;
+    width: 63px;
+    height: 236px;
+    left: 150px;
+    top: 0px;
+    position: relative;
+    gap: 12px;
   }
 
   .menu-left.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100vw;
-    height: 900px;
+    height: 1000px;
     color: #303030;
     z-index: 1000;
     top: 0px;
@@ -555,6 +580,9 @@
   }
 
   .img-categoria {
-    margin: 0 auto;
+    right: 0px;
+    top: 0px;
+    position: relative;
+    margin-bottom: 20px;
   }
 }

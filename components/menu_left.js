@@ -5,6 +5,7 @@ class MenuLeft extends HTMLElement {
       <i class="bi bi-list"></i>
       <p>Todas as categorias</p>
     </div>
+    
     <div class="menu-left " >
       <ul class="sub-menu ">
         <li class="categoria color-categorias">Departameto<i class="bi bi-chevron-compact-right"></i></li>
@@ -27,43 +28,49 @@ class MenuLeft extends HTMLElement {
         <li>Departameto<i class="bi bi-chevron-compact-right"></i></li>
         <li>Departameto<i class="bi bi-chevron-compact-right"></i></li>
         <li>Departameto<i class="bi bi-chevron-compact-right"></i></li>
-        </ul>
+      </ul>
 
-      <div class="categorias-menu-left">
-        <ul class="ul-categorias">
-          <li class="color-categorias">Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-        </ul>
+      <div class="div-categorias">
+        <div class="categorias-menu-left-1">
+          <ul class="ul-categorias">
+            <li class="color-categorias">Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+          </ul>
+        </div>
 
-        <ul class="ul-categorias">
-          <li class="color-categorias">Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-        </ul>
+        <div class="categorias-menu-left-2">
+          <ul class="ul-categorias">
+            <li class="color-categorias">Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+          </ul>
+        </div>
 
-        <ul class="ul-categorias">
-          <li class="color-categorias">Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-          <li>Categoria</li>
-        </ul>
+        <div class="categorias-menu-left-3">
+          <ul class="ul-categorias">
+            <li class="color-categorias">Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+            <li>Categoria</li>
+          </ul>
+        </div>
       </div>
-
+      
       <div class="img-categoria">
         <div class="texto-img-categoria">
           <div class="texto-categoria">
@@ -71,7 +78,6 @@ class MenuLeft extends HTMLElement {
               Confira os Produtos <span style="color: #fff">Que <br>acabaram De chegar</span>
             </h5>
           </div>     
-          
           <button class="button-img-categoria">Ver Todos</button>
         </div>      
       </div>

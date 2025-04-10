@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap"
       rel="stylesheet"
     />
@@ -19,6 +35,7 @@
     />
     <script src="./assets/js/script.js" defer></script>
     <script src="./components/menu_left.js" defer></script>
+    <script src="./components/departamento.js" defer></script>
     <script src="./components/footer_options.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/media.css" />
@@ -69,16 +86,10 @@
           <!-- menu-left -->
           <menu-left></menu-left>
           <!-- menu-left -->
-          <ul class="ul-menu">
-            <li><a href="#">Departamento</a></li>
-            <li><a href="#">Departamento</a></li>
-            <li><a href="#">Departamento</a></li>
-            <li><a href="#">Departamento</a></li>
-            <li><a href="#">Departamento</a></li>
-            <li><a href="#">Departamento</a></li>
-            <li><a href="#">Departamento</a></li>
-            <li><a href="#">Departamento</a></li>
-          </ul>
+
+          <!-- menu-departamento -->
+          <menu-departamento></menu-departamento>
+          <!-- menu-departamento -->
         </div>
       </nav>
     </header>
@@ -111,13 +122,13 @@
         </div>
       </section>
 
-      <section class="section-carousel" id="carousel1">
+      <section class="section-carousel">
         <div class="section-carousel-options">
           <h3>Lançamento</h3>
           <a href="#">Ver mais</a>
         </div>
         <div class="cards-carousel">
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 1">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -136,7 +147,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 2">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -155,7 +166,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 3">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -174,7 +185,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 4">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -193,7 +204,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 5">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -212,7 +223,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 6">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -231,7 +242,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 7">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -250,19 +261,6 @@
             <button class="button-card">Comprar</button>
           </div>
         </div>
-
-        <div class="radios-inputs">
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-        </div>
-
-        <i class="bi bi-arrow-left-circle" id="prevBtn1"></i>
-        <i class="bi bi-arrow-right-circle" id="nextBtn1"></i>
       </section>
 
       <section class="lorem-avanti">
@@ -358,13 +356,13 @@
         </div>
       </section>
 
-      <section class="section-carouse-2" id="carousel2">
+      <section class="section-carousel" id="carousel2">
         <div class="section-carousel-options">
           <h3>Lançamento</h3>
           <a href="#">Ver mais</a>
         </div>
         <div class="cards-carousel">
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 1">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -383,7 +381,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 2">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -402,7 +400,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 3">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -421,7 +419,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 4">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -440,7 +438,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 5">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -459,7 +457,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 6">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -478,7 +476,7 @@
             <button class="button-card">Comprar</button>
           </div>
 
-          <div class="card-carousel">
+          <div class="card-carousel" alt="Slide 7">
             <mark class="mark-card-carousel-img">NOVO</mark>
             <img
               src="./assets/img/modelo-carousel.png"
@@ -497,23 +495,6 @@
             <button class="button-card">Comprar</button>
           </div>
         </div>
-        <div class="radios-inputs">
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-          <input type="radio" name="carousel" class="carousel-radio" />
-        </div>
-        <i
-          class="bi bi-arrow-left-circle bi-arrow-left-section-2"
-          id="prevBtn2"
-        ></i>
-        <i
-          class="bi bi-arrow-right-circle bi-arrow-right-section-2"
-          id="nextBtn2"
-        ></i>
       </section>
     </main>
 
